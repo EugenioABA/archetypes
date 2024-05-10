@@ -12,6 +12,7 @@ st.title('Archetype App')
 archetype_descriptions = {
     "Innocent": "Texts are characterized by an uplifting, optimistic tone that speaks to simplicity and purity. Language is straightforward, avoiding complexities or cynicism, promoting an idealistic and trouble-free world that appeals to a sense of nostalgia and comfort.",
     "Everyday": "The language is conversational, friendly, and approachable, with an emphasis on building community and belonging. It employs colloquialisms and a familiar tone to create a sense of connection and relatability, appealing to common, everyday values.",
+    "Everyman": "The language is conversational, friendly, and approachable, with an emphasis on building community and belonging. It employs colloquialisms and a familiar tone to create a sense of connection and relatability, appealing to common, everyday values.",
     "Hero": "Characterized by an inspiring, bold narrative that encourages action and resilience. Language is strong, decisive, and often uses metaphors of battle or achievement. It emphasizes courage and proactive behavior in overcoming challenges and adversity.",
     "Outlaw": "Texts challenge the status quo and embrace rebellion, using provocative or confrontational language that appeals to a sense of freedom and non-conformity. It often advocates for breaking rules, defying traditional norms, and revolutionary change.",
     "Explorer": "Focused on adventure and discovery, the language used is vivid, detailed, and curious, often describing journeys, explorations, and new experiences. It promotes a sense of wanderlust and the thrill of breaking new ground or venturing into the unknown.",
@@ -26,34 +27,6 @@ archetype_descriptions = {
 
 # Get tagline input from the user
 tagline = st.text_input('Enter Tagline', placeholder='Defending Liberty Pursuing Justice')
-
-# Predict the archetype for the tagline
-# if st.button('Predict Archetype'):
-#     if tagline == '':
-#         st.warning('Please enter a tagline to identify the archetype.')
-#     elif tagline != '':
-#         top_3_archetypes, top_3_probabilities = archetype_prediction(tagline)
-
-#         # Display the most probable archetype and its description
-#         highest_probability_archetype = top_3_archetypes[0]
-#         highest_probability = top_3_probabilities[0]
-#         if highest_probability < 20:
-#             st.error(f"Identified Archetype: {highest_probability_archetype}, Probability: {highest_probability}%")
-#         elif 20 <= highest_probability <= 50:
-#             st.warning(f"Identified Archetype: {highest_probability_archetype}, Probability: {highest_probability}%")
-#         else:
-#             st.success(f"Identified Archetype: {highest_probability_archetype}, Probability: {highest_probability}%")
-#         st.info(archetype_descriptions[highest_probability_archetype])
-
-#         # Display the other top 2 archetypes
-#         for i in range(1, 3):
-#             if top_3_probabilities[i] < 20:
-#                 st.error(f"Identified Archetype {i+1}: {top_3_archetypes[i]}, Probability: {top_3_probabilities[i]}%")
-#             elif 20 <= top_3_probabilities[i] <= 50:
-#                 st.warning(f"Identified Archetype {i+1}: {top_3_archetypes[i]}, Probability: {top_3_probabilities[i]}%")
-#             else:
-#                 st.success(f"Identified Archetype {i+1}: {top_3_archetypes[i]}, Probability: {top_3_probabilities[i]}%")
-
 
 if st.button('Predict Archetype'):
     if tagline == '':
