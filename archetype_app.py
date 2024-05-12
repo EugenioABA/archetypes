@@ -6,7 +6,7 @@ st.set_page_config(page_title="Archetype App", page_icon="https://upload.wikimed
 
 st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=80)
 #developed by 
-st.write('Developed by Business Intelligence | Marketing Analytics Team')
+st.write('Developed by Business Intelligence')
 st.title('Archetype App')
 
 
