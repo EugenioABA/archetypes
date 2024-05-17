@@ -28,7 +28,7 @@ This tool can help you to:
 st.header("How It Works")
 st.write("""
 1. **Input Text**: Enter text that embodies the ABA's voice.
-2. **Analyze**: Our algorithm evaluates your text against 12 archetypes.
+2. **Analyze**: Our model evaluates your text against 12 archetypes.
 3. **Discover**: Get a report on the best-matched archetype and insights for branding.
 """)
 st.markdown("---")
