@@ -4,34 +4,34 @@ import streamlit as st
 
 st.set_page_config(page_title="Archetype App", page_icon="https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png", layout="centered", initial_sidebar_state="collapsed")
 
-st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=80)
+#st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=80)
 #developed by 
-st.write('Developed by Business Intelligence')
-st.title('Archetype App')
+#st.write('Developed by Business Intelligence')
+#st.title('Archetype App')
 
 # Title
-st.header("Welcome!")
+#st.header("Welcome!")
 
 # Introduction
-st.write("""
-Discover the essence of your communications with our Brand Archetype Predictor! This tool helps ABA marketing staff analyze text to identify which of the 12 brand archetypes it best represents. Whether you're crafting outreach or internal messages, gain actionable insights to enhance engagement.
-""")
+#st.write("""
+#Discover the essence of your communications with our Brand Archetype Predictor! This tool helps ABA marketing staff analyze text to identify which of the 12 brand archetypes it best represents. Whether you're crafting outreach or internal messages, gain actionable insights to enhance engagement.
+#""")
 
-st.write("""
-This tool can help you to:
-- **Clarify Brand Identity**: Understand the core personality of our communications.
-- **Enhance Strategies**: Align messages with our identified archetype for consistency.
-- **Foster Connections**: Build stronger relationships by speaking our audience's language.
-""")
+#st.write("""
+#This tool can help you to:
+#- **Clarify Brand Identity**: Understand the core personality of our communications.
+#- **Enhance Strategies**: Align messages with our identified archetype for consistency.
+#- **Foster Connections**: Build stronger relationships by speaking our audience's language.
+#""")
 
 # How It Works
-st.header("How It Works")
-st.write("""
-1. **Input Text**: Enter text that embodies the ABA's voice.
-2. **Analyze**: Our model evaluates your text against 12 archetypes.
-3. **Discover**: Get a report on the best-matched archetype and insights for branding.
-""")
-st.markdown("---")
+#st.header("How It Works")
+#st.write("""
+#1. **Input Text**: Enter text that embodies the ABA's voice.
+#2. **Analyze**: Our model evaluates your text against 12 archetypes.
+#3. **Discover**: Get a report on the best-matched archetype and insights for branding.
+#""")
+#st.markdown("---")
 
 
 #########################################################################################################################################################################
@@ -40,11 +40,11 @@ st.markdown("---")
 #########################################################################################################################################################################
 
 # Get tagline input from the user
-tagline = st.text_input('Enter the text you want to idendify the archetype for', placeholder='Defending Liberty Pursuing Justice')
+tagline = st.text_input('Enter the copy you want to identify the archetype for', placeholder='Defending Liberty Pursuing Justice')
 
-if st.button('Idendify Archetype'):
+if st.button('Identify Archetype'):
     if tagline == '':
-        st.warning('Please enter text to identify the archetype.⚠️')
+        st.warning('Please enter copy to identify the archetype.⚠️')
     elif tagline != '':
         top_3_archetypes, top_3_probabilities = archetype_prediction(tagline)
 
